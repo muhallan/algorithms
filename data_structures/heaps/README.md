@@ -39,3 +39,7 @@ supposed to run.
 
 They can also be used in sports tournament applications where there is a
 hierarchy of participants with the winner on top.
+
+A heap can also be used to create a `heap_sort(iterable)` algorithm for sorting.
+This works similarly as `sorted(iterable)` but unlike it, it is not stable
+with a large collection.

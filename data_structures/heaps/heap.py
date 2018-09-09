@@ -39,3 +39,17 @@ print(heap)
 print("-- the smallest 5 elements are: ", end='')
 print(heapq.nsmallest(5, heap))
 print(heap)
+
+
+def heap_sort(iterable):
+    my_heap = []
+    for value in iterable:
+        heapq.heappush(my_heap, value)
+    return [heapq.heappop(my_heap) for i in range(len(my_heap))]
+
+
+unsorted_list = [5, 23, 1, 56, 62, 2, 4, 9, 13, 21, 92, 73, 12]
+print("unsorted list:")
+print(unsorted_list)
+print("sorted list:")
+print(heap_sort(unsorted_list))
