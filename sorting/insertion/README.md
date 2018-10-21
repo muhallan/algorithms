@@ -12,7 +12,7 @@ This means that for every pass, the sorted list keeps growing bigger until we re
 and every element has been brought to the left and the whole list is now sorted.
 
 ## Complexity
-There are **n - 1** passes to sort *n** items in a list. This algorithm starts
+There are **n - 1** passes to sort *n* items in a list. This algorithm starts
 at position 1 and moves through positions n - 1 moving items into the sorted
 sublist.
 
@@ -25,7 +25,7 @@ In the best case, for a sorted list, only one comparison is done per pass.
 When an item is encountered that is bigger than the current item being
 compared, the bigger item is moved in front and it leaves an empty slot behind for
 insertion of the smaller item being moved. This operation is called shifting and not
-swapping / exchanging as was done in previous algorithms.
+swapping / exchanging as is done in bubble sort.
 
 Generally shifting items is not computational intensive as exchanging items because
 only one assignment is done as opposed to two for exchanging. This makes
