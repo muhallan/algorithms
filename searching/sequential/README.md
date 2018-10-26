@@ -13,10 +13,10 @@ In the best case we will find the item in the first place we look, at the beginn
 On average, we will find the item about halfway into the list; that is, we will compare against n/2 items.
 However, as n gets large, the coefficients, no matter what they are, become insignificant in our approximation, so the complexity of the sequential search, is **O(n)**.
 
-`n` stands for the length of the items.
+`n` stands for the length of the collection of items.
 
 ## Use case
-Sequential search is can be used when the data set is relatively small and it can be traversed through quickly.
+Sequential search can be used when the data set is relatively small and can be traversed through quickly.
 
 Also it can be used when the data is not ordered.
 
