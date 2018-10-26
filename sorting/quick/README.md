@@ -43,7 +43,7 @@ efficiently implemented on most architectures and in most real world data.
 
 Also quick sort is an `in-place` sort which means that it doesn't require any extra storage space to
 execute. This is because the original list is what is used to sort it. Data is simply moved around the
-indices. Comparing quick sort with merge sort, merge sort extra storage, to store each of the sub-lists it creates
+indices. Comparing quick sort with merge sort, merge sort uses extra storage, to store each of the sub-lists it creates
 and this is quite expensive. Allocating and de-allocating the extra space used for merge sort
 increases the running time of the algorithm which is not needed for quick sort.
 Comparing average complexity, both sorts have `O(n logn )` average complexity but the constants differ
