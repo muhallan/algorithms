@@ -1,13 +1,13 @@
 # Binary Trees
 A `tree` is a non-linear data structure that has nodes that are connected by edges. One node which is the
 topmost node is called the `root`. This is the one without a `parent`. Every other node has one parent. Each
-node can have an arbitrary number of `children`. Nodes with no children are called `nodes`.
+node can have an arbitrary number of `children`. Nodes with no children are called `leaves`.
 
 A `binary tree` is a tree whose nodes have utmost 2 children. These are typically named `right child` and `left child`.
 
 There are various types of binary trees. Some are discussed below:
 * Full binary tree. This a binary tree where every node has two children except leaves which have no children at all.
-* Complete binary tree. This ia a binary tree where all levels are completely filled except possibly the last level. And if the last level
+* Complete binary tree. This is a binary tree where all levels are completely filled except possibly the last level. And if the last level
 is not completely filled, then the children are all as left as possible.
 * Perfect binary tree. This is a binary tree where all the internal nodes have two children and all leaves are at the same level.
 * Balanced binary tree. A balanced binary tree is one whose height is **O(log n)** where **n** is the number of nodes.
@@ -49,9 +49,10 @@ There are three types of this kind of traversal.
    right child, then we go back up to visit the right child of the next root up. We do this recursively until the whole tree is traversed. Where we find a missing
    child, we skip that part.
 
-   Pre-order traversal is used to create a copy of the tree. and is also used to get prefix expression on of an expression tree.
+   Pre-order traversal is used to create a copy of the tree. and is also used to get the prefix expression of an expression tree.
 
 3. Post-order traversal (leftChild - rightChild - root)
+
    In post-order traversal, we start by visiting the left child, then we move to the right child and then the root node. We do this recursively until when we've
    visited every node in the tree. This traversal starts by looking for the leftmost node in the tree, then it visits that, then goes to its right sibling, then goes
    to the root. The root for each subtree is visited only when all the left and right children are visited in that order. If the visited root has a right sibling,
