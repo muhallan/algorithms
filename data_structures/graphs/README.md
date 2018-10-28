@@ -2,7 +2,7 @@
 A graph is a data structure that represents sets of objects where some pairs of objects are
 connected by links. The interconnected objects are represented by points called `vertices` and the
 links that connect the `vertices` are called `edges`. An edge connects two vertices to show that
-there is a relationship between them. Edges may be one-way ot two-way. If the edges in a graph are
+there is a relationship between them. Edges may be one-way or two-way. If the edges in a graph are
 all one-way, that graph is a `directed graph` or a `digraph`. Edges may contain a `weight` that
 indicates the cost to go from one vertex to another. A `path` in a graph is a sequence of vertices
 that are connected by edges. A `cycle` in a directed graph is a path that starts and ends at the same
@@ -19,7 +19,7 @@ A graph is commonly represented as an `adjacency matrix` and an `adjacency list`
    v to vertex w. For non-weighted graphs, presence of a vertex can be shown by filling the intersection cell
    of a row and column by 1 and leaving the rest as 0.
 
-   The adjacency matrix can be represent as a 2D array of size V * V where V is the number of vertices in
+   The adjacency matrix can be represented as a 2D array of size V * V where V is the number of vertices in
    the graph.
 
    The advantage of an adjacency matrix is that it is simple to implement and follow. For smaller graphs, it
