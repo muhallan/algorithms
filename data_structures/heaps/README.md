@@ -26,7 +26,7 @@ and then the smallest element is popped. Pushing happens before popping.
 * `nlargest(k, iterable[, key])` - returns the k largest elements from
  the iterable specified and key, if provided, specifies a function of
  one argument that is used to extract a comparison key from each element in the iterable.
-* `nsmallest(k, iterable[, key])` - return the k smallest elements from
+* `nsmallest(k, iterable[, key])` - returns the k smallest elements from
 the iterable specified and key, if provided, specifies a function of
  one argument that is used to extract a comparison key from each element in the iterable.
 
