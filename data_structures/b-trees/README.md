@@ -1,8 +1,8 @@
 # B-Trees
 A B-Tree is a self - balanced search tree with multiple keys in every node and more
-than one children for every node.
+than one child for every node.
 
-The number of keys and the number of children for a node in a B-Tree depends on its
+The number of keys and the number of children for a node in a B-Tree depend on its
 **order**.
 
 A B-Tree of order `m` has the following properties;
@@ -14,7 +14,7 @@ more than `m - 1` keys.
 - Every non-leaf node except the root has at least the ceiling of `m/2` children
 - All leaves appear in the same level
 - B-Trees are created from the bottom - up
-- All the key values within a node must be in ascending order. The child between two keys k1 and k2 contains all keys in the range from k1 and k2.
+- All the key values within a node must be in ascending order. The child between two keys k1 and k2 contains all keys in the range from k1 to k2.
 - Time complexity to search, insert and delete is **O(log n)**
 
 ## Search operation in a B-Tree
@@ -41,7 +41,7 @@ following steps;
 the tree as the node
 1. If the tree is not empty, find the leaf node to which the new key can be added.
 This is got by checking if the key of the new node is less than or larger
-than the keys in the root. When position where it belongs is found, it is either
+than the keys in the root. When the position where it belongs is found, it is either
 moved to the left subtree if it is smaller/equal or the right subtree if it is larger
 than the comparing key.
 1. If that found leaf node is already full, then split that leaf node by sending
