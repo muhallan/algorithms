@@ -23,7 +23,7 @@ In the worst case, every comparison will cause an exchange. On average,
 half the exchanges will be made. However complexity is **O(n^2)**.
 
 ## Analysis
-Bubble sort is very inefficient since it must exchange all items since before
+Bubble sort is very inefficient because it must exchange all items before
 the final location is known. These exchanges are memory intensive and time
 consuming.
 
