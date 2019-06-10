@@ -4,8 +4,8 @@ and then for every pass, it gets an element from the right and inserts into its 
 position in the left sublist, maintaining its sorted structure.
 
 We begin the sorted list with the first element, and then we keep bringing an extra element from the right
-hand side and comparing it with the items already in the sorted list. Items that are bigger the item we are
-comparing with are shifted to the right until we reach the end of the list or a smaller item is encounter and
+hand side and comparing it with the items already in the sorted list. Items that are bigger than the item we are
+comparing with are shifted to the right until we reach the end of the list or a smaller item is encountered and
 the carried item is inserted in that position.
 
 This means that for every pass, the sorted list keeps growing bigger until we reach the end of the list

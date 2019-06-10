@@ -1,12 +1,12 @@
 def sequential_search(list_to_search, item):
-	found = False
-	index = 0
-	while index < len(list_to_search) and not found:
-		if list_to_search[index] == item:
-			found = True
-		else:
-			index += 1
-	return found
+    found = False
+    index = 0
+    while index < len(list_to_search) and not found:
+        if list_to_search[index] == item:
+            found = True
+        else:
+            index += 1
+    return found
 
 
 # testing

@@ -1,31 +1,31 @@
 def binary_search(list_to_search, item):
-	start = 0
-	end = len(list_to_search) - 1
-	found = False
-	while start <= end and not found:
-		middle = (start + end) // 2
-		if list_to_search[middle] == item:
-			found = True
-		else:
-			if item < list_to_search[middle]:
-				end = middle - 1
-			else:
-				start = middle + 1
-	return found
+    start = 0
+    end = len(list_to_search) - 1
+    found = False
+    while start <= end and not found:
+        middle = (start + end) // 2
+        if list_to_search[middle] == item:
+            found = True
+        else:
+            if item < list_to_search[middle]:
+                end = middle - 1
+            else:
+                start = middle + 1
+    return found
 
 
 def binary_search_recursive(list_to_search, item):
-	if len(list_to_search) == 0:
-		return False
-	else:
-		midpoint = len(list_to_search) // 2
-		if list_to_search[midpoint] == item:
-			return True
-		else:
-			if item < list_to_search[midpoint]:
-				return binary_search_recursive(list_to_search[:midpoint], item)
-			else:
-				return binary_search_recursive(list_to_search[midpoint + 1:], item)
+    if len(list_to_search) == 0:
+        return False
+    else:
+        midpoint = len(list_to_search) // 2
+        if list_to_search[midpoint] == item:
+            return True
+        else:
+            if item < list_to_search[midpoint]:
+                return binary_search_recursive(list_to_search[:midpoint], item)
+            else:
+                return binary_search_recursive(list_to_search[midpoint + 1:], item)
 
 
 # testing non recursive
