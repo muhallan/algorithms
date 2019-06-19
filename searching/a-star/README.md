@@ -15,28 +15,29 @@ where
 
 A* algorithm begins at the start node, and considers all adjacent cells. Once the list of adjacent
 cells has been populated, it filters out those which are inaccessible. It then picks the cell with the
-lowest cost, which is the estimated f(n). This process is recursively repeated until the shortest path has been found to the target (blue node). The computation of  is done via a heuristic that usually gives good results.
+lowest cost, that is, the one with the lowest estimated `f(n)`. This process is recursively repeated
+until the shortest path has been found to the target. The computation of `h(n)` is done via a heuristic that usually gives good results.
 
 There are generally three approximation heuristics used to calculate `h(n)`:
 * Manhattan Distance. This is the sum of absolute values of differences in the goal’s x and y
 coordinates and the current cell’s x and y coordinates respectively. We use this when we are allowed to move only in four directions only
 (right, left, top, bottom).
-    >h = abs (current_cell.x – goal.x) +
-     abs (current_cell.y – goal.y)
+    >h = abs(current_cell.x – goal.x) +
+     abs(current_cell.y – goal.y)
 * Diagonal Distance. This is the maximum of absolute values of differences in the goal’s x and y coordinates and the
 current cell’s x and y coordinates respectively. This is used when we are allowed to move in eight directions only.
     >h = max { abs(current_cell.x – goal.x),
            abs(current_cell.y – goal.y) }
 * Euclidean Distance. This is the distance between the current cell and the goal cell using this distance formula.
-This is used when we are allowed to move in any directions.
-    >h = sqrt ( (current_cell.x – goal.x)^2 +
-            (current_cell.y – goal.y)^2 )
+This is used when we are allowed to move in any direction.
+    >h = sqrt((current_cell.x – goal.x)^2 +
+            (current_cell.y – goal.y)^2)
 
 ## Limitations
-A* Search Algorithm doesn’t produce the shortest path always, as it relies heavily on heuristics / approximations to calculate *h*
+A* Search Algorithm doesn’t produce the shortest path always, as it relies heavily on heuristics/approximations to calculate *h*
 
 ## Complexity
-The worse case time complexity is **O(E)**, where **E** is the number of edges in the graph
+The worst case time complexity is **O(E)**, where **E** is the number of edges in the graph
 
 ## Application
 A* is commonly used for the common pathfinding problem in applications such as games
